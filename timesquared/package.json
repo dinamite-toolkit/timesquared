@@ -1,0 +1,31 @@
+{
+  "name": "TimeSquared",
+  "version": "1.0.0",
+  "description": "DINAMITE tracefile visualization tool",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.0",
+    "monetdb": "^1.1.4"
+  },
+  "devDependencies": {
+    "jasmine": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.0.2"
+  },
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start karma.conf.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/auggy/auggy.bitbucket.org.git"
+  },
+  "author": "Augustine Wong, Derek Chan",
+  "license": "Apache",
+  "homepage": "https://bitbucket.org/auggy/auggy.bitbucket.org#readme"
+}

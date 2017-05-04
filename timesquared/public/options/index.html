@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Bootstrap Core CSS -->
+    	<link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+		
+		<!-- Our CSS -->
+		<link rel="stylesheet" href="../css/timesquared.css" type="text/css">
+    </head>
+    <body>		
+		<!-- Main Title -->
+		<div class="container-fluid">
+			<h2 id=title>TimeSquared Database Options</h2>
+		</div>
+		
+		<hr>
+		
+		<div class="container-fluid">
+			<h3>Database Parameters</h3>
+			<div class="col-sm-6">
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="dbparamHost">Host:</label>
+					<div class="col-sm-8">
+					<input type="email" class="form-control" id="dbparamHost" placeholder="Enter hostname">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="dbparamPort">Port:</label>
+					<div class="col-sm-8"> 
+					<input type="password" class="form-control" id="dbparamPort" placeholder="Enter port number">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="dbparamName">Database Name:</label>
+					<div class="col-sm-8"> 
+					<input type="password" class="form-control" id="dbparamName" placeholder="Enter database name">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="dbparamUser">Username:</label>
+					<div class="col-sm-8"> 
+					<input type="password" class="form-control" id="dbparamUser" placeholder="Enter database username">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="dbparamPass">Password:</label>
+					<div class="col-sm-8"> 
+					<input type="password" class="form-control" id="dbparamPass" placeholder="Enter password">
+					</div>
+				</div>
+				<div class="form-group"> 
+					<div class="col-sm-offset-4 col-sm-8">
+						<button type="submit" class="btn btn-success">Update</button>
+						<a href="/dashboard" class="btn btn-danger">Return to dashboard</a>
+					</div>
+				</div>
+			</form>
+		</div>
+		
+    </body>
+    
+	<!-- jQuery -->
+	<script src="../js/lib/jquery-3.1.1.min.js"></script>
+	
+	<!-- Bootstrap Core JavaScript -->
+	<script src="../js/lib/bootstrap.min.js"></script>
+	
+	<!-- Our code -->
+	<script src="options.js"></script>
+</html>

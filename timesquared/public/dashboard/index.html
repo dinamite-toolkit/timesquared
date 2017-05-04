@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Bootstrap Core CSS -->
+    	<link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+		
+		<!-- Our CSS -->
+		<link rel="stylesheet" href="../css/timesquared.css" type="text/css">
+		<link rel="stylesheet" href="../css/dashboard.css" type="text/css">
+    </head>
+    <body>
+		<!-- Main Title -->
+		<div class="container-fluid">
+			<a href="/options" id="optionsButton" target="_blank"><i class="glyphicon glyphicon-cog"></i></a>
+			<h2 id=title>TimeSquared Database Dashboard</h2>
+		</div>
+		
+		<hr>
+		
+		<div class="container-fluid">
+			<div class="col-sm-6">
+				<h3>Query</h3>
+				<textarea class="form-control" rows="5" id="dbQueryInput" placeholder="SELECT dir, func, tid, time FROM trace LIMIT 500"></textarea>
+				
+				<button class="btn btn-warning" data-toggle="popover" data-placement="bottom" data-trigger="hover" id="dbQuery">
+					Query
+				</button>
+				<div id="dbQueryPopover" style="display: none;">
+				 	<ul class="popoverList">
+						<li>ctrl + enter</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<h3>Trace Metadata</h3>
+				<table class="table table-bordered">
+					<tbody id=traceMetadata>
+					</tbody>
+				</table>
+				
+			</div>
+		</div>
+		
+		<hr>
+		
+		<div class="container-fluid">
+			<h3>Query History</h3>
+			<hr>
+			<div id="history">
+		</div>
+		
+		
+    </body>
+    
+	<!-- jQuery -->
+	<script src="../js/lib/jquery-3.1.1.min.js"></script>
+
+	<!-- D3 Library -->		
+	<script src="../js/lib/d3.min.js"></script>
+	
+	<!-- Bootstrap Core JavaScript -->
+	<script src="../js/lib/bootstrap.min.js"></script>
+	
+	<!-- Our code -->
+	<script src="../js/shared/EventObj.js"></script>
+	<script src="../js/shared/TransferrableEventObj.js"></script>
+	<script src="../js/frontend/QueryConstructor.js"></script>
+	<script src="../js/frontend/Database.js"></script>
+    <script src="../js/frontend/Renderer.js"></script>
+	<script src="dashboard.js"></script>
+</html>

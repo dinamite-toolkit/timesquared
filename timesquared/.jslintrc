@@ -1,0 +1,15 @@
+{
+    "node": true,
+    "white": true,
+    "plusplus": true,
+    "predef": [
+        "describe", "it", "expect", "fail",
+        "Set", "Uint32Array",
+        "importScripts", "onmessage", "postMessage",
+        "DataProcessor", "EventObj", "ThreadProcessor", "TimeInterval", "TransferrableEventObj",
+        "Renderer", "QueryConstructor", "Database",
+        "$", "self", "document", "window", "Worker", "alert", "location",
+        "FileReader", "XMLHttpRequest", "Promise", "sift", "d3", "io", "jQuery"
+    ],
+    "regexp": true
+}
