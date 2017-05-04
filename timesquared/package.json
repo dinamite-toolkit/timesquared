@@ -1,6 +1,6 @@
 {
   "name": "TimeSquared",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "DINAMITE tracefile visualization tool",
   "main": "server.js",
   "directories": {
@@ -23,9 +23,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/auggy/auggy.bitbucket.org.git"
+    "url": "git+ssh://git@github.com:dinamite-toolkit/timesquared.git"
   },
   "author": "Augustine Wong, Derek Chan",
-  "license": "Apache",
-  "homepage": "https://bitbucket.org/auggy/auggy.bitbucket.org#readme"
+  "license": "MIT",
+  "homepage": "https://github.com/dinamite-toolkit/timesquared"
 }

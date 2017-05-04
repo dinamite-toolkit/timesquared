@@ -62,11 +62,6 @@ $(document).ready( function () {
         container: 'body',
         content: $('#mdSamplePopover').html()
     });
-    $('#lgSample').popover({
-        html: true,
-        container: 'body',
-        content: $('#lgSamplePopover').html()
-    });
     $('#dbDashboard').popover({
         html: true,
         container: 'body',
