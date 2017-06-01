@@ -36,7 +36,7 @@ function main () {
         
         $("#filenameHeader").html(decodeURI(query));
         
-        Database.rawQuery(query)
+        Database.rawQuery(decodeURI(query))
         .then(function (rawdata) {
             // transitionUI(decodeURI(query));
             dataProcessorWebWorker.postMessage(["rawdata", rawdata]);

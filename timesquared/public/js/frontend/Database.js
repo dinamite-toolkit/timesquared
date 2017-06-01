@@ -27,7 +27,7 @@ Database.rawQuery = function (query) {
         function errCallback () {
             reject("Database Error");
         }
-        databaseSendPost('/db', "query=" + query, successCallback, errCallback);
+        databaseSendPost('/db', "query=" + encodeURIComponent(query), successCallback, errCallback);
     });
 };
 
