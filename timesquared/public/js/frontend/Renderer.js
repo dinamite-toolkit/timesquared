@@ -40,10 +40,10 @@ function infoHTML (thread, func, abstime, reltime) {
 }
 
 function statsHTML (id, duration, avg, stddev) {
-    return "<br>Event ID: " + id +
-    "<br>Duration: " + duration + " ns" +
-    "<br>Mean duration: " + parseInt(avg, 10) + " ns" +
-    "<br>Std. Dev: " + parseInt(stddev, 10);
+    return "<br>Event ID: " + id.toLocaleString() +
+    "<br>Duration: " + duration.toLocaleString() + " ns" +
+    "<br>Mean duration: " + parseInt(avg, 10).toLocaleString() + " ns" +
+    "<br>Std. Dev: " + parseInt(stddev, 10).toLocaleString();
 }
 
 /**
